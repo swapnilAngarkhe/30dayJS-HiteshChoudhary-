@@ -23,7 +23,7 @@ if(day==1){
 
 
     //grade assign (A B C D F) based on score switch case
-let grade = 78;
+let grade = 70;
 switch(true){
     case grade>=90:
         console.log(`A score= ${grade}`);
