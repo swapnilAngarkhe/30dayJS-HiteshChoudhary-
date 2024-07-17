@@ -2,7 +2,7 @@
 //task-7
     //function that takes 2 parms return product
 
-function product(a,b){
+function product(a,b=2){
     return a*b;
 }
 console.log(product(5,1));
