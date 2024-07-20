@@ -5,7 +5,7 @@ let book1 = {
     author: "Maggie O'Farrell",
     name: "Hamnet",
     year: 2020,
-    summary: function() {
+    summary() { 
         return `${this.name} is a great book by ${this.author}.`;
     }
 };
