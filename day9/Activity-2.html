@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-2</title>
+</head>
+<body>
+
+    <div>
+        <ul id="list-1">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    
+</body>
+
+    <script>
+
+        const div=document.createElement('div');
+        div.className='Activity-2'
+        div.textContent='my new div'
+        document.body.appendChild(div);
+
+        const li = document.createElement('li')
+        li.textContent = '6 added with js'  
+        
+     
+
+        const ul = document.getElementById('list-1')
+        ul.appendChild(li)
+
+
+    </script>
+
+</html>

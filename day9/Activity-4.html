@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-4</title>
+    <style>
+        .new-class {
+            border: 2px solid red;
+        }
+        .red-background {
+            background-color: red;
+        }
+        .yellow-background {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="replaceMe" src="https://images.unsplash.com/photo-1721475246144-98e4f01f3a6c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <p id="paragraph" class="red-background">This is a sample paragraph with a red background.</p>
+
+</body>
+
+<script>
+    const imagereplace = document.querySelector('#replaceMe');
+    const newImg = document.createElement('img');
+    newImg.src = 'https://images.unsplash.com/photo-1664480676027-c1b0b1dfac47?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+    imagereplace.replaceWith(newImg);
+
+    const paragraph = document.querySelector('#paragraph');
+    paragraph.classList.remove('red-background'); 
+    paragraph.classList.add('yellow-background');  
+</script>
+
+</html>

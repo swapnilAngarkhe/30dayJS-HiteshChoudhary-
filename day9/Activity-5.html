@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-5</title>
+</head>
+<body>
+    <p id="text">This is a paragraph.</p>
+    <button id="changeTextButton">Change Text</button>
+    <div id="hoverElement" style="width: 100px; height: 20px; margin:20px; background-color: lightgrey; border: 2px solid black;">Hover over me</div>
+
+    <script>
+        document.querySelector('#changeTextButton').addEventListener('click', () => {
+            document.querySelector('#text').textContent = 'The text has been changed!';
+        });
+
+        const hoverElement = document.querySelector('#hoverElement');
+        hoverElement.addEventListener('mouseover', () => hoverElement.style.borderColor = 'red');
+        hoverElement.addEventListener('mouseout', () => hoverElement.style.borderColor = 'black');
+    </script>
+</body>
+</html>
