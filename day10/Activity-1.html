@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-1</title>
+</head>
+<body style="background-color:#212121; color:aliceblue">
+
+    <p id="paragraph"> THIS IS A SIMPLE PARAGRAPH </p>
+
+    <button id="paraBtn" style="background-color:aquamarine; font-size:large; border-radius:9px; margin:15px; ">Click me if you a real Niqqa</button>
+    <br>
+
+    <img src="bruh.webp" alt="CLICK TO SEE THE IMG" id="armour" style="margin-bottom:30px; opacity:0%; border:solid; border-color:aliceblue">
+    
+</body>
+
+    <script>
+
+        document.getElementById('paraBtn').addEventListener('click',function(e){
+            console.log(e)
+            const changeMe=document.getElementById('paragraph');
+            changeMe.innerText= `girl: lets do soemthing dirty
+            me: no, I just bought these pants
+            girl: dont worry, I can take them off
+            me: No, mom said I look good in them`
+
+        },false)
+
+        document.getElementById('armour').addEventListener('dblclick', function(e){
+            const imgVisible = document.getElementById('armour')
+            imgVisible.style.opacity='100%'
+        },false)
+
+    </script>
+
+</html>

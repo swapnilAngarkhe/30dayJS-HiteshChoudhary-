@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-3</title>
+</head>
+<body>
+
+    <input placeholder="Click here, then press down any key." size="50" />
+    <p id="logDown">  </p>
+
+    <input placeholder="Key down above ⬆️, key up below ⬇️." size="50" />
+    <p id="logThisUp">  </p>
+    
+</body>
+
+    <script>
+
+        document.querySelector("input").addEventListener("keydown", function(e) {
+            const log = document.getElementById("logDown");
+            log.textContent += ` ${e.code}`;
+        }, false);
+        
+        document.querySelector("input").addEventListener("keyup", function(e) {
+            const log = document.getElementById("logThisUp");
+            log.textContent += ` ${e.code}`;
+        }, false);
+    
+
+    </script>
+
+</html>

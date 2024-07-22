@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-2</title>
+</head>
+<body>
+
+    <button id='myButton'style="background-color:Black; color:aliceblue">
+        I got black I got white what you want?
+     </button>
+
+     <h2 id="changeBack" style="background-color:black; color:whitesmoke">
+        BLACK
+     </h2>
+
+    
+</body>
+
+    <script>
+
+        document.getElementById('myButton').addEventListener('mouseover',function(){
+            const changeBtn = document.getElementById('myButton')
+            changeBtn.style.backgroundColor='white';
+            changeBtn.style.color='black';
+        },false)
+
+        document.getElementById('changeBack').addEventListener('mouseout', function(){
+            const changeBack = document.getElementById('changeBack')
+            changeBack.style.backgroundColor='white';
+            changeBack.style.color='black'
+        },false)
+    </script>
+
+</html>

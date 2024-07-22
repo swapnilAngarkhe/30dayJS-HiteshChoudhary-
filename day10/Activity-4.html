@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-4</title>
+</head>
+<body>
+ 
+    <form id="myForm">
+        <input type="text" name="username" placeholder="Username">
+        <button type="submit">Submit</button>
+
+
+        <label for="options">Choose a car:</label>
+        <select id="options">
+            <option value="volvo">volvo </option>
+            <option value="Audi">Audi</option>
+            <option value="Kia"> Kia</option>
+        </select>
+        <p class="selected-value"></p>
+
+    </form>
+
+
+
+<script>
+
+    document.querySelector('#myForm').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+        const input = document.querySelector('input[name="username"]');  
+        console.log("Form data:", input.value);  
+    });
+
+    const select = document.querySelector('#options');
+    const selected = document.querySelector('.selected-value');
+    select.addEventListener('change', function() {
+        selected.innerHTML = `Selected value: ${select.value}`;
+    },false);
+    
+
+</script>
+
+</body>
+</html>
