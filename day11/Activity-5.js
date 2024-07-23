@@ -1,8 +1,8 @@
 //A-5
 //TASK-8:
-const fetch1=fetch('https://www.youtube.com/watch?v=SyL1thdXmlE')
+const fetch1=fetch('https://jsonplaceholder.typicode.com/posts')
 const fetch2=fetch('https://jsonplaceholder.typicode.com/posts')
-
+ 
 Promise.all([fetch1, fetch2]).then(function(values){
     console.log(values)
 });
@@ -32,3 +32,4 @@ Promise.race([
 }).catch(error=>{
     console.log('error: ',error);
 })
+//done
