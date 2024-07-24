@@ -3,15 +3,18 @@
 
 let rl=require('readline-sync')
 
-try{
-    let age= 1500;
-    if(age>150){
-        throw new ReferenceError('Invalid age')
-    }else{
-        console.log('your age is valid ',age);
+class CustomError extends Error {
+    constructor(message) {
+        super(message)
+        this.name = "CustomErrors"
     }
-}catch(error){
-    console.log(error.message);
+}
+
+try {
+    throw new CustomError("This is a custom error")
+}
+catch (error) {
+    console.log(error.message)
 }
 
 
