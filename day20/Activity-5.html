@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 5</title>
+</head>
+<body>
+        Task 9 and 10
+</body>
+
+
+    <script>
+
+        let key1= prompt('set the key task-9: ');
+        let value1= prompt('set the value for the key task-9: ');
+        localStorage.setItem(key1,value1);
+        console.log(`the value of ${key1} is ${localStorage.getItem(key1)}`);
+
+
+        let KEY2= prompt('set the key task-10: ');
+        let VALUE2= prompt('set the value for the key task-10: ');
+        sessionStorage.setItem(KEY2,VALUE2);
+        console.log(`the value of ${KEY2} is ${sessionStorage.getItem(KEY2)}`);
+
+
+        localStorage.clear()
+        sessionStorage.clear()
+        console.log(`the value of ${key1} is ${localStorage.getItem(key1)}`);
+        console.log(`the value of ${KEY2} is ${sessionStorage.getItem(KEY2)}`);
+
+
+
+        
+      
+
+    </script>
+
+</html>
