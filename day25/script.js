@@ -26,7 +26,7 @@ function displayMovieList(movies){
     searchList.innerHTML = "";
     for(let idx = 0; idx < movies.length; idx++){
         let movieListItem = document.createElement('div');
-        movieListItem.dataset.id = movies[idx].imdbID; // setting movie id in  data-id
+        movieListItem.dataset.id = movies[idx].imdbID; 
         movieListItem.classList.add('search-list-item');
         if(movies[idx].Poster != "N/A")
             moviePoster = movies[idx].Poster;
