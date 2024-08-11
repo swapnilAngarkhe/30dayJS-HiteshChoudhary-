@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "axios": "^1.7.3",
+    "cors": "^2.8.5",
     "loadash": "^1.0.0",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"

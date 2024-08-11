@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textMe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <img class="logo" src="tm-logo.png" alt="tm-logo">
+    </nav>
+
+    <div class="container">
+        <!-- Messages will be appended here -->
+    </div>
+
+    <div class="send">
+        <form id="send-container">
+            <input type="text" id="msgInp">
+            <button class="btn" type="submit">Text</button>
+        </form>
+    </div>
+</body>
+</html>
